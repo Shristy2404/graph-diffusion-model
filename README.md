@@ -1,7 +1,7 @@
-#### **Note** - This is a simplified, general version of the code I wrote for the actual project - which is proporietary and on Qualcomm servers. I have shared as much as I can without violating CCI constraints. 
+#### **Note** - This is a simplified, general version of the code I wrote for the actual project - which is proporietary and on company servers. I have shared as much as I can without violating CCI constraints. 
 
 # Graph Diffusion Model
-This repository demonstrates a diffusion-based approach to denoise noisy graph data using synthetic examples. The project includes graph generation, a denoising model, and evaluation pipelines.
+This repository demonstrates a diffusion-based approach to denoise noisy graph data using synthetic examples. The project includes graph generation, a denoising model, and an evaluation pipeline.
 
 --- 
 ## Table of Contents
@@ -82,7 +82,8 @@ This repository demonstrates a diffusion-based approach to denoise noisy graph d
     ```bash
     python data/add_noise.py
 3. Train the fully connected or GCN-based denoising model 
-
+    ```bash
+    python src/train.py
 4. Evaluate the trained model using MSE as a metric:
 
     ```bash
